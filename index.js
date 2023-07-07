@@ -1,5 +1,5 @@
 // variables & const section
-const inquirer = require('inquirer');
+import inquirer from 'inquirer';
 const fs = require('fs');
 const questions = require('./lib/questions.js');
 const fileName = "./examples/logo.svg";
