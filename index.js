@@ -1,36 +1,26 @@
+// variables & const section
+const inquirer = require('inquirer');
+const fs = require('fs');
+const questions = require('./lib/questions.js');
+const fileName = "./examples/logo.svg";
+const setShape = require('./lib/setShape.js')
 
+// function to create new svg file using inquirer response and file system
+function createLogo(response) {
+    const svg = setShape(response);
+    fs.writeFile(fileName, svg, ()=> console.log('Generated logo.svg'));
+}
 
-// prompt questions for logo creation
-const questions = [
-    {
-      type: 'input',
-      name: 'name',
-      message: 'Welcome to the Logo Creator! Please enter the name for your logo, up to only 3 characters.'
-    },
-    {
-      type: 'input',
-      name: 'textColor',
-      message: 'Please enter a color keyword or hexadecimal number for a color. This will be for the TEXT color.',
-    },
-    {
-      type: 'list',
-      name: 'shapes',
-      message: 'Please choose a shape.',
-      choices: ['Circle', 'Triangle', 'Square']
-    },
-    {
-      type: 'input',
-      name: 'shapeColor',
-      message: 'Please enter a color keyword or hexadecimal number for a color. This will be for the SHAPE color.'
-    },
-  ];
+// initialize, ask questions then createLogo using responses, catch any errors
+function init() {
+    inquirer 
+    .prompt(questions)
+    .then((response) => {
+        createLogo(response);
+        })
+    .catch(err => {
+            console.log(err)
+        });
+}
 
-  const writeToFile = data => {
-    fs.writeFile('logo.svg', data, err => {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log('Generated logo.svg successfully!');
-        }
-    });
-  };
+init();
