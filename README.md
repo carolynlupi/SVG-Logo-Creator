@@ -1,18 +1,38 @@
-# SVG-Logo-Creator
-This will create a logo using node.js after being prompted questions.
+# SVG-Logo-Maker
 
-## Acceptance Criteria 
-1. GIVEN a command-line application that accepts user input
-2. WHEN I am prompted for text
-   THEN I can enter up to three characters
-3. WHEN I am prompted for the text color
-   THEN I can enter a color keyword (OR a hexadecimal number)
-4. WHEN I am prompted for a shape
-   THEN I am presented with a list of shapes to choose from: circle, triangle, and square
-5. WHEN I am prompted for the shape's color
-   THEN I can enter a color keyword (OR a hexadecimal number)
-6. WHEN I have entered input for all the prompts
-   THEN an SVG file is created named `logo.svg`
-   AND the output text "Generated logo.svg" is printed in the command line
-7. WHEN I open the `logo.svg` file in a browser
-   THEN I am shown a 300x200 pixel image that matches the criteria I entered
+## Description
+This SVG logo maker will help any user to create a quick logo only using this simple generator.
+
+## Table of contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+
+
+## Installation
+First rule of business, open the integrated terminal of the file where you will be working on. Then, type "npm init". Once something is prompted, click enter until you are done with the prompts. After that, type "npm i inquirer@8.2.4". Make sure you are installing the most compatible version. 
+
+Then for testing purposes, you have to install "jest". In the same terminal, type "npm install jest". To be able to see a preview of the logo, please install this extension on VS CODE (https://marketplace.visualstudio.com/items?itemName=jock.svg) Both things are mandatory for this project, so please make sure it is installed properly. 
+
+## Usage
+To run the log maker, open the integrated termianl in the "index.js" file. Once in there type "node index.js". User will be prompted with a couple of questions about the logo that they want to create such as shape, text color, shape color, and the 3 characters that they want to include in the logo. Once that is done, a file will be created with the name "logo.svg". Then, open it in the extension you installed earlier. 
+
+## Walkthrough Video
+
+https://drive.google.com/file/d/1qOG6TM7hbInTNyhyio2iBTHKlPBrsgXQ/view?usp=sharing
+
+## Screenshots
+
+Run node index.js
+
+Questions prompt to the user
+
+Final product
+
+## License
+n/a
+
+## Contributing
