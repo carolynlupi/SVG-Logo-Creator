@@ -6,25 +6,23 @@ This SVG logo maker will help any user to create a quick logo only using this si
 ## Table of contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
+- [Video Link](#videolink)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
 
 
 ## Installation
-First rule of business, open the integrated terminal of the file where you will be working on. Then, type "npm init". Once something is prompted, click enter until you are done with the prompts. After that, type "npm i inquirer@8.2.4". Make sure you are installing the most compatible version. 
-
-Then for testing purposes, you have to install "jest". In the same terminal, type "npm install jest". To be able to see a preview of the logo, please install this extension on VS CODE (https://marketplace.visualstudio.com/items?itemName=jock.svg) Both things are mandatory for this project, so please make sure it is installed properly. 
+1. Clone this repository to your local machine.
+2. Open the integrated terminal in the project's root folder.
+3. Run npm init and follow the prompts to initialize the project.
+4. Install the required dependencies by running npm i inquirer@8.2.4.
 
 ## Usage
-To run the log maker, open the integrated termianl in the "index.js" file. Once in there type "node index.js". User will be prompted with a couple of questions about the logo that they want to create such as shape, text color, shape color, and the 3 characters that they want to include in the logo. Once that is done, a file will be created with the name "logo.svg". Then, open it in the extension you installed earlier. 
+To run the log maker, open the integrated termianl in the "index.js" file. Once in there type "node index.js". User will be prompted with a couple of questions about the logo that they want to create such as shape, text color, shape color, and the 3 characters that they want to include in the logo. Once that is done, a file will be created with the name "logo.svg". Then, open this in the live browser.
 
 ## Walkthrough Video
 
-https://drive.google.com/file/d/1qOG6TM7hbInTNyhyio2iBTHKlPBrsgXQ/view?usp=sharing
-
-## Screenshots
+https://www.youtube.com/watch?v=Sgs2ONlrR2I&ab_channel=Carolyn
 
 Run node index.js
 
@@ -36,3 +34,11 @@ Final product
 n/a
 
 ## Contributing
+We welcome contributions from the community! If you'd like to make improvements to the SVG Logo Maker, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Create a new branch with a descriptive name for your changes.
+3. Make your changes and commit them with clear commit messages.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository, explaining your changes in detail.
+
